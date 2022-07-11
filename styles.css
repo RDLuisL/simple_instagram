@@ -1,0 +1,126 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #000;
+    --grisclaro: #EAEAEA;
+    --grisOscuro: rgb(99, 97, 97);
+    --fuentePrincipal: 'Handlee', cursive;
+    --fuenteSecundaria: 'krub', cursive;
+    --transparent: rgba(0, 0, 0, 0);
+    --bordes: none; /*activa (red dashed) y desactiva (none) los bordes de los contenedores*/
+
+}
+/* GLOBALES */
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 62.5%; /* Selectores en html y body para que se adapten mejor a pantallas con alta densidad de pixeles*/
+    box-sizing: border-box; /* Hack para Box Model */
+    background-color: var(--oscuro);
+
+}
+/* Estas dos líneas de html y *, *:before, *:after sirven para evitar que el padding modifique el resultado final del tamaño de la flexbox*/
+*, *:before, *:after {
+    box-sizing: border-box;
+/*GLOBALES*/
+}
+header{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: space-around;
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border: var(--bordes);
+    font-family: var(--fuenteSecundaria);
+    width: 100rem;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+    font-size: 3rem;
+    border: var(--bordes);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grisclaro);
+    border: var(--bordes);
+    width: 100rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    width: 70rem;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border: var(--bordes);
+}
+img {
+    width: 70rem;
+    border: var(--bordes);
+}
+
+main {
+   margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: var(--fuenteSecundaria);
+    border: var(--bordes);
+}
+.tarjeta {
+    width: 70rem;
+    display:flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    width: fit-content;
+    border: var(--bordes);
+    justify-content: space-around;
+    background-color: var(--blanco);
+    margin: 2rem 0 0 0;
+    border-radius: 2rem;
+}
+.encabezado__tarjeta {
+    width: 70rem;
+    display: flex;
+    margin-left: 1rem;
+}
+h2 .izq {
+    margin-left: 2rem;
+}
+p {
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.5rem;
+}
+.p2 {font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+}
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    width: 70rem;
+    margin: 2rem 0;
+}
+a img {
+    border-radius: 50%;
+}
+.iconos-abajo {
+    display: flex;
+    width: 70rem;
+    justify-content: space-around;
+    margin: 2rem 0 0 0;
+
+}

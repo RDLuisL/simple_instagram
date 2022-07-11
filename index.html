@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Instagram Photo Feed by Luis Luna</title>
+        
+        <!--cargando la libreria de normalize-->
+        <link href="normalize.css" rel="stylesheet">
+        
+        <!--para hacer más rapida la pagina precargando el archivo de styles.css-->
+        <link rel="preload" href="styles.css" as="style">
+        
+        <!--link=Etiqueta de link, href=archivo donde estan los estilos, rel=atributo de relación con el archivo-->
+        <link href="styles.css" rel="stylesheet">
+        
+        <!--link para cargar las fuentes desde Google fonts-->
+        <!--Handlee-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+        <!--Krub-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    </head>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+        <h1>          
+            <i>Breathe Code Photo Feed</i>
+        </h1>
+        <!--======================= Icono Favorite (Heart) ======================-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg>
+        <!--======================= Icono Search ======================-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>  
+        <!--======================= Icono Paper Plane ======================-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="10" y1="14" x2="21" y2="3" />
+            <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+        </svg>
+        <!--======================= Icono Bookmark ======================-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="44" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+          </svg>
+       
+    </header>
+    <nav>
+        <nav class="navegacion-principal" >
+            <!--Icono de agregar-->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <line x1="9" y1="12" x2="15" y2="12" />
+                <line x1="12" y1="9" x2="12" y2="15" />
+                </svg>
+            <a> <img src="https://thispersondoesnotexist.com/image" style="width:75px;height:75px;"></a>
+            <a> <img src="https://images.pexels.com/photos/4519122/pexels-photo-4519122.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-4519122.jpg&fm=jpg" style="width:75px;height:75px;"></a>
+            <a> <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" style="width:75px;height:75px;"></a>
+            <a> <img src="https://images.pexels.com/photos/4519471/pexels-photo-4519471.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-4519471.jpg&fm=jpg" style="width:75px;height:75px;"></a>
+            <a> <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?cs=srgb&dl=pexels-stefan-stefancik-91227.jpg&fm=jpg" style="width:75px;height:75px;"></a>
+
+        </nav> 
+    </nav>
+        
+    <body>
+        <main>
+                <div class="tarjeta">
+                    <div class="encabezado__tarjeta">
+                        <h2><i>My first photo</i></h2>        
+                        <h2>12/14</h2>      
+                    </div>
+                
+                    <img src="https://previews.123rf.com/images/lufimorgan/lufimorgan1509/lufimorgan150900005/45154060-los-ojos-azules-de-cachorros-husky-siberiano-lyingand-que-buscan-en-la-hierba-verde.jpg?fj=1"
+                    alt="Sample image of a first plane puppy siberian husky">
+                    <div>
+                        <h2>This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <i>#BreateCode</i></h2>
+                    </div>
+                </div>
+                
+                <div class="tarjeta">
+                    <div class="encabezado__tarjeta">
+                        <h2><i>Some Cute Thing</i></h2>
+                        <h2>12/17</h2>
+                    </div>
+                    
+                    <img src="https://i.pinimg.com/564x/9e/b2/8d/9eb28d32c49e34c275b3a6d70eb6bc95.jpg"
+                    alt="Sample image of a first plane puppy pug over a skatef">
+                
+                    <div>
+                        <h2>The internet approves this cute dog...<i>#BreatheCode</i>                    
+                        </h2>
+                    </div>
+                </div>
+                
+
+                <div class="tarjeta">
+                    <div class="encabezado__tarjeta">
+                        <h2><i>There's a paparazzi around</i></h2>
+                        <h2>12/17</h2>
+                    </div>
+                    
+                    <img src="https://cdn1.photostockeditor.com/c/2411/man-in-front-of-laptop-computer-in-shallow-focus-photography-computer-people.jpg"
+                    alt="Sample image of a person writing something on a laptop">
+                
+                    <div>
+                        <h2>This is me waiting for the screen to show my awesome first website made at #BreatheCod</h2>
+                    </div>
+                </div>
+
+
+                <div class="tarjeta">
+                    <div class="encabezado__tarjeta">
+                        <h2><i>And of course... food</i></h2>                        
+                        <h2 class="izq">12/17</h2>
+                    </div>
+                        
+                    <img src="https://myplate-prod.azureedge.us/sites/default/files/styles/recipe_525_x_350_/public/2020-11/SkilletPastaDinner_527x323.jpg?itok=Yb4EDdkm"
+                    alt="Sample image of pasta meal">  
+                    
+                    <div>
+                        <h2>Because no photo feed is some food on it! <i>#BreatheCode </i></h2>
+                    </div>
+                </div>
+            
+
+            </div>
+            <div>
+
+            </div>
+        </main>
+               
+        
+            <div class="iconos-abajo">
+                <!--HOME-->
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>   
+                </a>
+               
+
+                <!--SEARCH-->
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                      </svg>   
+                </a>
+                
+                
+                <!--DISPLAY-->
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="4" />
+                        <path d="M10 9l5 3l-5 3z" />
+                      </svg>       
+                </a>
+                 
+
+                <!--CARTERA-->
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="7" width="18" height="13" rx="2" />
+                        <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                        <line x1="12" y1="12" x2="12" y2="12.01" />
+                        <path d="M3 13a20 20 0 0 0 18 0" />
+                         </svg>  
+                </a>
+                  
+
+                <!--PROFILE-->
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <circle cx="12" cy="10" r="3" />
+                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                            </svg>
+                    </a>
+                
+            </div>
+            <footer>
+                <div class="footer">
+                    <p>Simple</p> <p class="p2">Instagram</p><p> by Luis Luna todos los derechas reservados 2022</p>
+            </div>
+            <div>    
+        </footer>
+   
+    </body>
+ </html>
