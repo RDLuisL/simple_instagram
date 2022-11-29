@@ -7,6 +7,10 @@
     --fuenteSecundaria: 'Instagram_Sans', cursive;
     --transparent: rgba(0, 0, 0, 0);
     --bordes: none; /*activa (red dashed) y desactiva (none) los bordes de los contenedores*/
+}
+
+.iconinstagram { 
+    margin-left: 60px;
 
 }
 /* GLOBALES */
@@ -106,13 +110,16 @@ main {
 h2 .izq {
     margin-left: 2rem;
 }
+
 p {
     font-family: var(--fuenteSecundaria);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
-.p2 {font-family: var(--fuenteSecundaria);
-    font-size: 2rem;
+
+.p2 {font-family: var(--fuentePrincipal);
+    font-size: 4rem;
 }
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -120,15 +127,18 @@ p {
     gap: 1rem;
     color: white;
 }
+
 .navegacion-principal {
     display: flex;
     justify-content: space-between;
     width: 70rem;
     margin: 2rem 0;
 }
+
 a img {
     border-radius: 50%;
 }
+
 .iconos-abajo {
     color: white;
     display: flex;
